@@ -1,3 +1,5 @@
+import java.util.Iterator;
+import java.util.ArrayList;
 
 /**
  * Provide a demonstration of the Club and Membership
@@ -10,7 +12,8 @@ public class ClubDemo
 {
     // instance variables - replace the example below with your own
     private Club club;
-
+    private ArrayList<Membership> members;
+    
     /**
      * Constructor for objects of class ClubDemo
      */
