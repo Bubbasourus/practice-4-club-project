@@ -95,7 +95,7 @@ public class Club
     public ArrayList<Membership> purge2(int month, int year) // question 5
     {
         ArrayList<Membership> purgeList = new ArrayList<>();
-        if (0 < month && month <= 12) {
+        if ((0 < month && month <= 12) && (year>=1950 && year<=2026)) {
             Iterator<Membership> it = members.iterator();
             while (it.hasNext()) {
                 Membership m = it.next();
@@ -106,6 +106,7 @@ public class Club
             }
         } else {
             System.out.println("Accepted month values are between 1 and 12.");
+            System.out.println("Accepted year values are between 1950 and 2026.");
             return null;
         }
         return purgeList;
